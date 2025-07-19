@@ -1,5 +1,5 @@
 /**
- * 【02】練習課題
+ * 【02】練習課題,
  */
 import {Pg, Lib} from "@tscratch3/tscratch3likejs/s3lib-importer";
 import type { IPgMain as PgMain } from '@Type/pgMain';
