@@ -53,7 +53,7 @@ Pg.setting = async function setting() {
 
     // 旗が押されたときの動作の定義
     sprite.Event.whenFlag( async function*( this:Sprite ){
-        // ずっと繰り返し、(10)進ませる
+        // ずっと繰り返す
         for(;;){
             // (10)進ませる
             this.Motion.Move.steps( 10 );
