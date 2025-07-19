@@ -44,10 +44,14 @@ Pg.prepare = async function prepare() {
 
 // イベント定義処理
 Pg.setting = async function setting() {
+
+    // 旗が押されたときの動作の定義
     sprite.Event.whenFlag( async function( this:Sprite ){
         // ドラッグ可能とする
         this.DragMode.draggable = true;
     });
+
+    // 旗が押されたときの動作の定義
     sprite.Event.whenFlag( async function*( this:Sprite ){
         // ずっと繰り返し、(10)進ませる
         for(;;){
