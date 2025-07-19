@@ -41,8 +41,11 @@ Pg.prepare = async function prepare() {
     // CAT スプライトを作る
     // --------------------
     sprite = new Lib.Sprite('sprite');
+    // コスチュームイメージを追加
     sprite.Image.add( Constants.CAT );
+    // コスチュームイメージを追加
     sprite.Image.add( Constants.CAT2 );
+    // 音を追加
     sprite.Sound.add( Constants.NYA );
 }
 

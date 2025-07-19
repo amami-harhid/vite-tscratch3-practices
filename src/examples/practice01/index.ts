@@ -39,8 +39,9 @@ Pg.prepare = async function prepare() {
     // CAT スプライトを作る
     // --------------------
     sprite = new Lib.Sprite('sprite');
-    //sprite.Image.add( Constants.CAT );
+    // コスチュームイメージを追加
     sprite.Image.add( Constants.APPLE );
+    //sprite.Image.add( Constants.CAT );
 }
 
 // イベント定義処理

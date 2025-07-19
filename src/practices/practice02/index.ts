@@ -5,6 +5,10 @@ import {Pg, Lib} from "@tscratch3/tscratch3likejs/s3lib-importer";
 import type { IPgMain as PgMain } from '@Type/pgMain';
 import type { ISprite as Sprite } from '@Type/sprite';
 
+// ---------------------------------
+// タイトルを設定する
+// ---------------------------------
+Pg.title = "演習02";
 
 // ---------------------------------
 // アセットのURL
@@ -16,11 +20,6 @@ const CatSvg = Host + '/assets/cat.svg';
 // SUBをインポートする
 // ---------------------------------
 import { Constants } from "./sub/constants";
-
-// ---------------------------------
-// タイトルを設定する
-// ---------------------------------
-Pg.title = "演習02";
 
 // ---------------------------------
 // ステージとスプライトの変数を定義する
@@ -38,19 +37,12 @@ Pg.prepare = async function prepare() {
     // CAT スプライトを作る
     // --------------------
     sprite = new Lib.Sprite('sprite');
+    // コスチュームイメージを追加
     sprite.Image.add( Constants.CAT );
-    // ドラッグ可能とする
-    sprite.DragMode.draggable = true;
+
 }
 
 // イベント定義処理
 Pg.setting = async function setting() {
 
-    sprite.Event.whenFlag(async function(this:Sprite){
-
-        for(;;) {
-            
-
-        }
-    })
 }

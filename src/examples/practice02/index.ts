@@ -37,6 +37,7 @@ Pg.prepare = async function prepare() {
     // CAT スプライトを作る
     // --------------------
     sprite = new Lib.Sprite('sprite');
+    // コスチュームイメージを追加
     sprite.Image.add( Constants.CAT );
     // ドラッグ可能とする
     sprite.DragMode.draggable = true;
