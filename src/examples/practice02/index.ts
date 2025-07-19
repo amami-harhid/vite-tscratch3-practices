@@ -1,5 +1,5 @@
 /**
- * 【02】練習課題 (2025/7/19)
+ * 【02】練習課題 (2025/7/20 08:34)
  */
 import {Pg, Lib} from "@tscratch3/tscratch3likejs/s3lib-importer";
 import type { IPgMain as PgMain } from '@Type/pgMain';
