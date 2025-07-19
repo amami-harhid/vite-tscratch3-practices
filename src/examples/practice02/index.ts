@@ -39,12 +39,15 @@ Pg.prepare = async function prepare() {
     sprite = new Lib.Sprite('sprite');
     // コスチュームイメージを追加
     sprite.Image.add( Constants.CAT );
-    // ドラッグ可能とする
-    sprite.DragMode.draggable = true;
+
 }
 
 // イベント定義処理
 Pg.setting = async function setting() {
+    sprite.Event.whenFlag( async function( this:Sprite ){
+        // ドラッグ可能とする
+        this.DragMode.draggable = true;
+    });
     sprite.Event.whenFlag( async function*( this:Sprite ){
         // ずっと繰り返し、(10)進ませる
         for(;;){
@@ -52,5 +55,5 @@ Pg.setting = async function setting() {
             this.Motion.Move.steps( 10 );
             yield;
         }
-    })
+    });
 }
