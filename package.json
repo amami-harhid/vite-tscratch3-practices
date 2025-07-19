@@ -1,0 +1,27 @@
+{
+  "name": "tscratch3-practies",
+  "version": "1.0.0",
+  "description": "Tscratch 演習集",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "tsc && vite build --emptyOutDir",
+    "preview": "vite preview"
+  },
+  "author": "amami-harhid",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@tscratch3/tscratch3likejs": "^1.0.0-beta.31",
+    "@types/glob": "^8.1.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-erasable-syntax-only": "^0.3.1",
+    "globals": "^16.2.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "vite": "^6.3.5",
+    "vite-plugin-static-copy": "^3.1.0",
+    "vite-plugin-top-level-await": "^1.5.0"
+  }
+}

@@ -1,0 +1,33 @@
+/**
+ * このファイルの内容を変更してはいけません。
+ */
+ {
+    "compilerOptions": {
+      "target": "esnext",
+      "useDefineForClassFields": true,
+      "module": "esnext",
+      "lib": ["esnext", "DOM", "DOM.Iterable"],
+      "skipLibCheck": true,
+      "baseUrl": "./",
+      "paths": {
+        "@Type/*": ["./node_modules/@tscratch3/tscratch3likejs/Type/*"],
+      },
+      /* Bundler mode */
+      "moduleResolution": "node",
+      "allowImportingTsExtensions": true,
+      "verbatimModuleSyntax": true,
+      "moduleDetection": "force",
+      "noEmit": true,
+  
+      /* Linting */
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      //"erasableSyntaxOnly": true,  // <---- 有効にすると enum がエラーになる
+      "noFallthroughCasesInSwitch": true,
+      "noUncheckedSideEffectImports": true
+    },
+    "include": ["./src/**/*.ts", "./index.html"],
+    "exclude": ["./node_modules/*", "./build/**/*"],
+  }
+  
