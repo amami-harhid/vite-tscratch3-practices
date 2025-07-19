@@ -14,7 +14,7 @@ Pg.title = "演習01";
 // アセットのURL
 // ---------------------------------
 const Host = 'https://amami-harhid.github.io/tscratch3assets';
-const CatSvg = Host + '/assets/cat.svg';
+const CatSvg = Host + '/assets/cat.svg'; // ★ 演算子(+)で文字列結合
 
 // ---------------------------------
 // SUBをインポートする
