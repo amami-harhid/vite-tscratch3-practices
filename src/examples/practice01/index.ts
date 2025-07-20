@@ -15,7 +15,7 @@ Pg.title = "演習01";
 // ---------------------------------
 const Host = 'https://amami-harhid.github.io/tscratch3assets';
 //const CatSvg = Host + '/assets/cat.svg';
-const AppleSvg = Host + '/assets/Apple.svg';
+const AppleSvg = Host + '/assets/Apple.svg'; // ★ 変更
 
 // ---------------------------------
 // SUBをインポートする
@@ -30,7 +30,7 @@ let sprite: Sprite;
 // 事前ロード処理
 Pg.preload = async function( this: PgMain) {
     //this.Image.load(AppleSvg, Constants.CAT);
-    this.Image.load(AppleSvg, Constants.APPLE);
+    this.Image.load(AppleSvg, Constants.APPLE); // ★ 変更
 }
 
 // 事前準備処理
@@ -40,7 +40,7 @@ Pg.prepare = async function prepare() {
     // --------------------
     sprite = new Lib.Sprite('sprite');
     // コスチュームイメージを追加
-    sprite.Image.add( Constants.APPLE );
+    sprite.Image.add( Constants.APPLE ); // ★ 変更
     //sprite.Image.add( Constants.CAT );
 }
 

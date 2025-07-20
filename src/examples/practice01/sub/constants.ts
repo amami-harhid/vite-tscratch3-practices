@@ -1,4 +1,4 @@
 export const Constants = {
     //CAT: 'CAT',
-    APPLE: 'APPLE',
+    APPLE: 'APPLE', // ★ 変更
 }
