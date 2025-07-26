@@ -68,7 +68,7 @@ Pg.setting = async function setting() {
         for(;;){
             this.Motion.Move.steps( 10 );
             // もし端についていたら
-            if(this.Sensing.isTouchingEdge()) {
+            if(this.Sensing.Edge.isTouching) {
                 // カウンターのカウントアップ
                 counter += 1;
                 if( counter % 2 == 0) { // 偶数のとき

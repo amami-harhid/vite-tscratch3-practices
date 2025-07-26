@@ -62,7 +62,7 @@ Pg.setting = async function setting() {
         for(;;){
             this.Motion.Move.steps( 10 );
             // もし端についていたら
-            if(this.Sensing.isTouchingEdge()) {
+            if(this.Sensing.Edge.isTouching) {
                 // 音を鳴らす
                 this.Sound.play( Constants.NYA );
             }

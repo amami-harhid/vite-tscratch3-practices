@@ -78,11 +78,11 @@ Pg.setting = async function setting() {
         // ずっと繰り返し、スペースキーが押されたときを判定し、押されているときはジャンプさせ音を鳴らす
         for(;;){
             // スペースキーが押されたとき
-            if( this.Sensing.isKeyDown(Lib.Keyboard.SPACE)) {
+            if( this.Sensing.Key.isDown(Lib.Keyboard.SPACE)) {
                 // 音を鳴らす
                 this.Sound.play( Constants.NYA );
                 await this.Event.broadcastAndWait( Messages.JUMP );
-                await this.Control.waitWhile( ()=>this.Sensing.isKeyDown(Lib.Keyboard.SPACE) );
+                await this.Control.waitWhile( ()=>this.Sensing.Key.isDown(Lib.Keyboard.SPACE) );
             }
             yield;
         }
